@@ -6,7 +6,7 @@ TOKEN = process.env.Authorization
 CHANNEL_ID = "1245731705113940089"
 MESSAGE = "🌙 __The Revengeance__ | NA Clan 🇺🇸\n- Requirements:  Follow the upgrade requirements for the week, have 1k+ wins or 50k+ RAP\n- Stats: Coin Earning - **MAX** | Welfare - **MAX** | Luck - **FIVE** | Size **FIVE** | 3 upgrades away from Quantum Arena. 👾 \nDM <@992221688362192956> to apply! ^^"
 
-client = discond.Client()
+client = discord.Client()
 
 @client.event
 async def on_ready():

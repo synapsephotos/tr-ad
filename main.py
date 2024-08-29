@@ -10,9 +10,9 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-  channel = client.get_channel(CHANNEL_ID)
+  channel = await client.fetch_channel(CHANNEL_ID)
   while True:
     await channel.send(MESSAGE)
-    await asyncio.sleep(22 * 60)
+    await asyncio.sleep(5 * 60)
 
 client.run(TOKEN)

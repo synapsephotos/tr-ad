@@ -17,3 +17,4 @@ async def on_ready():
     await asyncio.sleep(5 * 60)
 
 client.run(Authorization)
+keep_alive()
